@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Роман Кодесников](https://up.htmlacademy.ru/htmlcss/29/user/246536).
-* Наставник: [Роман Марченко] (https://up.htmlacademy.ru/htmlcss/29/user/505487).
+* Наставник: [Роман Марченко](https://up.htmlacademy.ru/htmlcss/29/user/505487).
 
 ---
 
