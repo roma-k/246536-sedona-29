@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root{
+  --main-color: #333333;
+  --blue: #81B3D2;
+  --blue-medium: #669EC0;
+  --blue-dark: #5496BD;
+  --bcg-silver: #EEEEEE;
+  --main-silver: #F2F2F2;
+  --brovn: #766357;
+  --brown-medium: #604E43;
+  --brown-dark: #503E33;
+  --block-color: #6A6A6A;
+
+}
+
+
+.page{
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 21px;
+  color: black;
+  background-color: var(--main-silver);
+
+  box-sizing: border-box;
+}
+
