@@ -241,10 +241,14 @@ ________________________________________________/
 
 .features_list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .features_sublist {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*====VISUALLY HIDDEN======*/
