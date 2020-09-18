@@ -151,6 +151,7 @@ ________________________________________________*/
   font-weight: bold;
   color: var(--black);
   text-decoration: none;
+  margin: 0;
 }
 
 .menu_item:hover,
@@ -172,6 +173,7 @@ ________________________________________________*/
   line-height: 26px;
   color: var(--black);
   font-weight: bold;
+  margin: 0;
 }
 
 .heading_form_white {
@@ -181,6 +183,7 @@ ________________________________________________*/
   font-weight: bold;
   text-decoration: none;
   background-color: var(--brovn);
+  margin: 0;
 }
 
 .features_heading_white {
@@ -188,6 +191,7 @@ ________________________________________________*/
   line-height: 21px;
   color: var(--white);
   font-weight: bold;
+  margin: 0;
 }
 
 .features_heading_black {
@@ -196,15 +200,18 @@ ________________________________________________*/
   color: var(--black);
   font-weight: bold;
   text-decoration: none;
+  margin: 0;
 }
 
 .text_normal {
   color: var(--black);
   text-decoration: none;
+  margin: 0;
 }
 
 .text_white {
   color: var(--white);
+  margin: 0;
 }
 
 .big_heading {
@@ -224,6 +231,20 @@ ________________________________________________/
 
 .small_item{
   background-color: var(--bcg-silver);
+}
+
+.site_nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features_list {
+  list-style: none;
+}
+
+.features_sublist {
+  list-style: none;
 }
 
 /*====VISUALLY HIDDEN======*/
