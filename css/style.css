@@ -11,9 +11,9 @@
   --brown-medium: #604E43;
   --brown-dark: #503E33;
   --block-color: #6A6A6A;
-
+  --black: #000000;
+  --white: #ffffff;
 }
-
 
 .page{
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
@@ -21,6 +21,7 @@
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
+  text-decoration: none;
   line-height: 21px;
   text-align: center;
   color: black;
@@ -30,13 +31,13 @@
 
   box-sizing: border-box;
 }
+/*
 
 .site-nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 .site-nav-list a{
   font-size: 1em;
@@ -110,10 +111,19 @@
   background-color: white;
 }
 
-.features-subitem {
-
+.header-list-black {
+  font-size: 1.5em;
+  line-height: 1.85em;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
+.features-item-inline {
+  background-color: var(--bcg-silver);
+}
 
 .search-section-header {
   font-size: 2.15em;
@@ -126,7 +136,97 @@
   color: black;
   text-decoration: none;
 }
+*/
+.body-wrapper{
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  width: 1200px;
+  margin: 0 auto;
+}
+/*______________________________________________
+             =Text typography=
+________________________________________________*/
+.menu_item {
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--black);
+  text-decoration: none;
+}
 
+.menu_item:hover,
+.menu_item:focus {
+  color: var(--blue);
+}
+
+.menu_item:active {
+  color: var(--black);
+  opacity: 0.3;
+}
+
+.active_item {
+  color: var(--brovn);
+}
+
+.heading_black {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.heading_form_white {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--brovn);
+}
+
+.features_heading_white {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.features_heading_black {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text_normal {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.text_white {
+  color: var(--white);
+}
+
+.big_heading {
+  font-size: 26px;
+  line-height: 26px;
+  color: var(--black);
+  font-weight: bold;
+}
+/* _____________________________________________
+                  =Grid=
+________________________________________________/
+ */
+
+.big_item {
+  background-color: var(--blue);
+}
+
+.small_item{
+  background-color: var(--bcg-silver);
+}
+
+/*====VISUALLY HIDDEN======*/
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
