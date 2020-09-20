@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-
 :root{
   --main-color: #333333;
   --blue: #81B3D2;
@@ -339,10 +337,14 @@ ________________________________________________/
   background-color: var(--bcg-silver);
 }
 
-.site_nav_list {
+.list-style_none {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site_nav_list {
+
 }
 
 .features_list {
@@ -352,27 +354,19 @@ ________________________________________________/
 }
 
 .features_sublist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
 }
 
 .sort_list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
 }
 
 .result_list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
 }
 
 .list_star {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
 }
 
 /*====VISUALLY HIDDEN======*/
