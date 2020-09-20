@@ -3,12 +3,15 @@
   --blue: #81B3D2;
   --blue-medium: #669EC0;
   --blue-dark: #5496BD;
+  --white-transp-05: rgba(100, 100, 100, 0.5);
+  --black-transp-03: rgba(0, 0, 0, 0.3);
   --bcg-silver: #EEEEEE;
   --main-silver: #F2F2F2;
   --silver: #cacaca;
   --brovn: #766357;
   --brown-medium: #604E43;
   --brown-dark: #503E33;
+  --brown-megadark: #503E33;
   --block-color: #6A6A6A;
   --black: #000000;
   --white: #ffffff;
@@ -27,124 +30,16 @@
   background-color: var(--main-silver);
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
-/*
 
-.site-nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.site-nav-list a{
-  font-size: 1em;
-  line-height: 1.85em;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-
-.site-nav-list a:hover,
-.site-nav-list a:focus {
-  color: var(--blue);
-}
-
-.site-nav-list a:focus {
-  color: black;
-  opacity: 0.3;
-}
-
-.active-nav-item {
-  color: var(--brovn);
-}
-
-.header-black {
-  font-size: 1.5em;
-  line-height: 1.85em;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-.main-text-black {
-  color: var(--main-color);
-  line-height: 1.85em;
-  margin: 0;
-  padding: 0;
-}
-
-.features-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features-item {
-  background-color: var(--blue);
-  text-align: center;
-}
-
-.features-item h3 {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: bold;
-}
-
-.item-text {
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-
-.features-sublist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-}
-
-.header-list-black {
-  font-size: 1.5em;
-  line-height: 1.85em;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
-
-.features-item-inline {
-  background-color: var(--bcg-silver);
-}
-
-.search-section-header {
-  font-size: 2.15em;
-  line-height: 1.7em;
-  font-weight: bold;
-}
-
-.footer-text {
-  line-height: 1.85em;
-  color: black;
-  text-decoration: none;
-}
-*/
 .body-wrapper{
   background-color: white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   width: 1200px;
   margin: 0 auto;
 }
-/*______________________________________________
-             =Text typography=
-________________________________________________*/
+
 .menu_item {
   line-height: 26px;
   font-weight: bold;
@@ -183,6 +78,16 @@ ________________________________________________*/
   text-decoration: none;
   background-color: var(--brovn);
   margin: 0;
+}
+
+.heading_form_white:hover,
+.heading_form_white:focus {
+  background-color: var(--brown-medium);
+}
+
+.heading_form_white:active {
+  color: var(--white-transp-05);
+  background-color: var(--brown-megadark);
 }
 
 .features_heading_white {
@@ -306,12 +211,29 @@ ________________________________________________*/
   text-decoration: none;
 }
 
+.hotel_name:hover,
+.hotel_name:focus {
+  color: var(--blue);
+}
+
+.hotel_name:active {
+  color: var(--black-transp-03);
+}
 
 .hotel_info_btn {
   font-weight: bold;
   color: var(--white);
   background-color: var(--blue);
   text-decoration: none;
+}
+
+.hotel_info_btn:hover,
+.hotel_info_btn:focus {
+  background-color: var(--blue-dark);
+}
+
+.hotel_info_btn:active {
+  color: var(--white-transp-05);
 }
 
 .hotel_reserve_btn {
@@ -321,12 +243,21 @@ ________________________________________________*/
   text-decoration: none;
 }
 
+.hotel_reserve_btn:hover,
+.hotel_reserve_btn:focus {
+  background-color: var(--brown-dark);
+}
+
+.hotel_reserve_btn:active {
+  color: var(--white-transp-05);
+}
+
 .rate_block {
   background-color: var(--bcg-silver);
 }
 /* _____________________________________________
-                  =Grid=
-________________________________________________/
+                  Элементы сетки
+________________________________________________
  */
 
 .big_item {
