@@ -7,6 +7,7 @@
   --blue-dark: #5496BD;
   --bcg-silver: #EEEEEE;
   --main-silver: #F2F2F2;
+  --silver: #cacaca;
   --brovn: #766357;
   --brown-medium: #604E43;
   --brown-dark: #503E33;
@@ -220,6 +221,111 @@ ________________________________________________*/
   color: var(--black);
   font-weight: bold;
 }
+
+.result_heading {
+  font-size: 21px;
+  color: var(--black);
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sort_heading {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.sorting_item {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black);
+  opacity: 0.3;
+  border-bottom: 2px dotted var(--blue);
+}
+
+.sorting_item:hover,
+.sorting_item:focus {
+  color: var(--blue-dark);
+  opacity: 1;
+}
+
+.sorting_item:active {
+  color: var(--black);
+  border-bottom: none;
+}
+
+.sort_active {
+  border-bottom: none;
+  color: var(--blue);
+  opacity: 1;
+}
+.sort_up {
+  display: inline-block;
+  border-left: 6px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid var(--silver);
+}
+
+.sort_up:hover,
+.sort_up:focus {
+  border-bottom: 9px solid var(--black);
+}
+
+.sort_up:active {
+  border-bottom: 9px solid var(--blue);
+}
+
+.sort_down {
+  display: inline-block;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 9px solid var(--silver);
+}
+
+.sort_down:hover,
+.sort_down:focus {
+  border-top: 9px solid var(--black);
+}
+
+.sort_down:active {
+  border-top: 9px solid var(--blue);
+}
+
+.down_active {
+  border-top: 9px solid var(--blue);
+}
+
+.up_active {
+  border-bottom: 9px solid var(--blue);
+}
+
+.hotel_name {
+  font-size: 21px;
+  color: var(--black);
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.hotel_info_btn {
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--blue);
+  text-decoration: none;
+}
+
+.hotel_reserve_btn {
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--brovn);
+  text-decoration: none;
+}
+
+.rate_block {
+  background-color: var(--bcg-silver);
+}
 /* _____________________________________________
                   =Grid=
 ________________________________________________/
@@ -249,6 +355,24 @@ ________________________________________________/
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.sort_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.result_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list_star {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*====VISUALLY HIDDEN======*/

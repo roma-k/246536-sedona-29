@@ -9,44 +9,46 @@
 <body>
   <div class="body-wrapper">
     <header>
-      <div class="centering-container">
+      <div>
         <a href="">
           <img src="https://via.placeholder.com/138x70" alt="Logo city of Sedona" width="138" height="70">
         </a>
         <nav>
-          <ul class="site-nav-list">
-            <li class="site-nav-item"><a href="">Информация</a></li>
-            <li class="site-nav-item"><a href="">Фото и видео</a></li>
-            <li class="site-nav-item"><a href="">Карта штата</a></li>
-            <li class="site-nav-item"><a href="catalog.html">Гостиницы</a></li>
+          <ul class="site_nav_list">
+            <li><a href="" class="menu_item">Информация</a></li>
+            <li><a href="" class="menu_item">Фото и видео</a></li>
+            <li><a href="" class="menu_item">Карта штата</a></li>
+            <li><a href="catalog.html" class="menu_item active_item">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <h1>найти и забронировать отель</h1>
+    <h1 class="visually-hidden">найти и забронировать отель</h1>
     <section>
-      <h2>фильтр поиска</h2>
-      <div class="centering-container">
-        <form action=""></form>
+      <h2 class="visually-hidden">фильтр поиска</h2>
+      <div>
+        <form action="">
+
+        </form>
       </div>
     </section>
     <section>
-      <h2>результат поиска</h2>
+      <h2 class="visually-hidden">результат поиска</h2>
       <div class="centering-container">
-      <ul>
+      <ul class="result_list">
         <li>
           <div>
-            <div><p>Найдено: <span>3</span></p> </div>
+            <div><p class="result_heading">Найдено: <span class="result_char">3</span></p> </div>
             <div>
-              <p>Сортировка:</p>
-              <ul>
-                <li><a href="">По цене</a></li>
-                <li><a href="">По типу</a></li>
-                <li><a href="">По рейтингу</a></li>
+              <p class="sort_heading">Сортировка:</p>
+              <ul class="sort_list">
+                <li><a href="" class="sorting_item sort_coast sort_active">По цене</a></li>
+                <li><a href="" class="sorting_item sort_type">По типу</a></li>
+                <li><a href="" class="sorting_item sort_rating">По рейтингу</a></li>
                 <li>
                   <div>
-                    <a href="">^</a>
-                    <a href="">v</a>
+                    <a href="" class="sort_up"></a>
+                    <a href="" class="sort_down down_active"></a>
                   </div>
                 </li>
               </ul>
@@ -61,22 +63,22 @@
             </div>
             <div>
               <div>
-                <h3>Amara Resort & Spa</h3>
-                <p>Гостиница <span>От 4000 Р.</span></p>
+                <a href="" class="hotel_name"><h3>Amara Resort & Spa</h3></a>
+                <p class="hotel_info"><span class="hotel_type">Гостиница</span> <span class="hotel_coast">От 4000 Р.</span></p>
                 <div>
-                  <a href="">Подробнее</a>
-                  <a href="">Забронировать</a>
+                  <a href="" class="hotel_info_btn">Подробнее</a>
+                  <a href="" class="hotel_reserve_btn">Забронировать</a>
                 </div>
               </div>
               <div>
-                <ul>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
+                <ul class="list_star">
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
                 </ul>
-                  <p>Рейтинг: <span>8,5</span></p>
+                  <p class="rate_block">Рейтинг: <span>8,5</span></p>
                 </div>
               </div>
             </div>
@@ -89,22 +91,22 @@
             </div>
             <div>
               <div>
-                <h3>Desert Quail Inn</h3>
-                <p>Мотель <span>От 3000 Р.</span></p>
+                <a href="" class="hotel_name"><h3>Desert Quail Inn</h3></a>
+                <p class="hotel_info"><span class="hotel_type">Мотель</span> <span class="hotel_coast">От 3000 Р.</span></p>
                 <div>
-                  <a href="">Подробнее</a>
-                  <a href="">Забронировать</a>
+                  <a href="" class="hotel_info_btn">Подробнее</a>
+                  <a href="" class="hotel_reserve_btn">Забронировать</a>
                 </div>
               </div>
               <div>
-                <ul>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
+                <ul class="list_star">
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
                 </ul>
-                <p>Рейтинг: <span>8,9</span></p>
+                <p class="rate_block">Рейтинг: <span>8,9</span></p>
               </div>
             </div>
           </div>
@@ -117,22 +119,22 @@
             </div>
             <div>
               <div>
-                <h3>Villas at Poco Diablo</h3>
-                <p>Апартаменты <span>От 2000 Р.</span></p>
+                <a href="" class="hotel_name"><h3>Villas at Poco Diablo</h3></a>
+                <p class="hotel_info"><span class="hotel_type">Апартаменты</span> <span class="hotel_coast">От 2000 Р.</span></p>
                 <div>
-                  <a href="">Подробнее</a>
-                  <a href="">Забронировать</a>
+                  <a href="" class="hotel_info_btn">Подробнее</a>
+                  <a href="" class="hotel_reserve_btn">Забронировать</a>
                 </div>
               </div>
               <div>
-                <ul>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
-                  <li>0</li>
+                <ul class="list_star">
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
+                  <li class="star_item">0</li>
                 </ul>
-                <p>Рейтинг: <span>9,2</span></p>
+                <p class="rate_block">Рейтинг: <span>9,2</span></p>
               </div>
             </div>
           </div>
@@ -142,17 +144,17 @@
     </section>
 
     <footer>
-      <div class="contact-footer">
-        <div>#visitSEDONA</div>
-        <a href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>
+      <div>
+        <div class="features_heading_black">#visitSEDONA</div>
+        <a href="tel:+7(495)666-01-66" class="features_heading_black">ТЕЛ: +7(495) 666-01-66</a>
       </div>
-      <ul class="social-footer">
+      <ul>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
       </ul>
       <div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="text_normal">Website by
           <img src="https://via.placeholder.com/114x40" alt="Htmlacademy.ru" width="114" height="40">
         </a>
       </div>
