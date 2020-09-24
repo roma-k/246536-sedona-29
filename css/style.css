@@ -1,4 +1,4 @@
-:root{
+:root {
   --main-color: #333333;
   --blue: #81B3D2;
   --blue-medium: #669EC0;
@@ -17,23 +17,26 @@
   --white: #ffffff;
 }
 
-.page{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.page {
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
-  text-transform: uppercase;
   text-decoration: none;
   line-height: 21px;
   text-align: center;
   color: black;
   background-color: var(--main-silver);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
-.body-wrapper{
+.body-wrapper {
   background-color: white;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   width: 1200px;
@@ -62,17 +65,21 @@
   color: var(--brovn);
 }
 
-.heading_black {
+.heading_black,
+.heading_form_white,
+.result_heading,
+.hotel_name {
   font-size: 21px;
   line-height: 26px;
+}
+
+.heading_black {
   color: var(--black);
   font-weight: bold;
   margin: 0;
 }
 
 .heading_form_white {
-  font-size: 21px;
-  line-height: 26px;
   color: var(--white);
   font-weight: bold;
   text-decoration: none;
@@ -90,21 +97,21 @@
   background-color: var(--brown-megadark);
 }
 
+.features_heading_black,
 .features_heading_white {
   font-size: 21px;
   line-height: 21px;
-  color: var(--white);
-  font-weight: bold;
-  margin: 0;
-}
-
-.features_heading_black {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--black);
   font-weight: bold;
   text-decoration: none;
   margin: 0;
+}
+
+.features_heading_white {
+  color: var(--white);
+}
+
+.features_heading_black {
+  color: var(--black);
 }
 
 .text_normal {
@@ -126,13 +133,12 @@
 }
 
 .result_heading {
-  font-size: 21px;
   color: var(--black);
-  line-height: 26px;
   font-weight: bold;
 }
 
-.sort_heading {
+.sort_heading,
+.sorting_item {
   font-size: 12px;
   line-height: 18px;
   color: var(--black);
@@ -140,9 +146,6 @@
 
 .sorting_item {
   text-decoration: none;
-  font-size: 12px;
-  line-height: 18px;
-  color: var(--black);
   opacity: 0.3;
   border-bottom: 2px dotted var(--blue);
 }
@@ -163,50 +166,31 @@
   color: var(--blue);
   opacity: 1;
 }
-.sort_up {
-  display: inline-block;
-  border-left: 6px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 9px solid var(--silver);
-}
 
-.sort_up:hover,
-.sort_up:focus {
-  border-bottom: 9px solid var(--black);
-}
-
-.sort_up:active {
-  border-bottom: 9px solid var(--blue);
-}
-
+.sort_up,
 .sort_down {
-  display: inline-block;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 9px solid var(--silver);
+  text-decoration: none;
 }
 
-.sort_down:hover,
-.sort_down:focus {
-  border-top: 9px solid var(--black);
+.sort_up:hover .sort_up--svg,
+.sort_up:focus .sort_up--svg,
+.sort_down:hover .sort_down--svg,
+.sort_down:focus .sort_down--svg {
+  fill: var(--black);
 }
 
-.sort_down:active {
-  border-top: 9px solid var(--blue);
+.sort_up:active .sort_up--svg,
+.sort_down:active .sort_down--svg {
+  fill: var(--blue);
 }
 
-.down_active {
-  border-top: 9px solid var(--blue);
-}
-
-.up_active {
-  border-bottom: 9px solid var(--blue);
+.down_active .sort_down--svg,
+.up_active .sort_up--svg {
+  fill: var(--blue);
 }
 
 .hotel_name {
-  font-size: 21px;
   color: var(--black);
-  line-height: 26px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -255,49 +239,35 @@
 .rate_block {
   background-color: var(--bcg-silver);
 }
+
+.htmlacademy:hover .academy_logo--svg,
+.htmlacademy:focus .academy_logo--svg {
+  fill: var(--blue);
+}
+
+.htmlacademy:active .academy_logo--svg {
+  fill: var(--silver);
+}
+
 /* _____________________________________________
                   Элементы сетки
 ________________________________________________
  */
+.header_bottom_wrap {
+  background-color: #6A6A6A;
+}
 
 .big_item {
   background-color: var(--blue);
 }
 
-.small_item{
+.small_item {
   background-color: var(--bcg-silver);
 }
 
-.list-style_none {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site_nav_list {
-
-}
-
+.list-style_none,
 .features_list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features_sublist {
-
-}
-
-.sort_list {
-
-}
-
-.result_list {
-
-}
-
-.list_star {
-
 }
 
 /*====VISUALLY HIDDEN======*/
