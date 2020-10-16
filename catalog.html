@@ -44,7 +44,43 @@
         <h1 class="visually-hidden">найти и забронировать отель</h1>
         <section class="search-section">
           <h2 class="visually-hidden">фильтр поиска</h2>
-          <form action=""></form>
+          <form action="" method="GET" class="catalog_form">
+            <fieldset class="field1">
+              <legend>Инфраструктура:</legend>
+                <input type="checkbox" checked id="pool">
+                <label for="pool">Бассейн</label>
+              
+                <input type="checkbox" id="parking">
+                <label for="parking">Парковка</label>
+              
+                <input type="checkbox" id="wifi">
+                <label for="wifi">Wi-Fi</label>
+            </fieldset>
+
+            <fieldset class="field2">
+              <legend>Тип жилья:</legend>
+                <input type="checkbox" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              
+                <input type="checkbox" id="motel" checked>
+                <label for="motel">Мотель</label>
+              
+                <input type="checkbox" checked id="apart">
+                <label for="apart">Апартаменты</label>
+            </fieldset>
+
+            <div class="form_col3">
+              <fieldset class="field3">
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="coast_day_container">
+                  <input type="number" name="" id="">
+                  <input type="number">
+                </div>
+                <input type="range" name="" id="">
+              </fieldset>
+              <input type="submit" value="Показать" class="catalog_submit_btn">
+            </div>
+          </form>
         </section>
         <section class="sorting_section">
           <h2 class="visually-hidden">результат поиска</h2>
@@ -318,18 +354,18 @@
             <a class="footer_heading" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
           </div>
           <ul class="list-style_none social_icon">
-            <li>
-              <a href="">
+            <li class="twitter">
+              <a href="" class="">
                 <p class="visually-hidden">twitter</p>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="fb">
+              <a href="" class="">
                 <p class="visually-hidden">facebook</p>
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="youtube">
+              <a href="" class="">
                 <p class="visually-hidden">youtube</p>
               </a>
             </li>

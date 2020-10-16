@@ -77,20 +77,20 @@
               />
               <ul class="list-style_none features_sublist">
                 <li>
-                  <p class="features_heading">Жильё</p>
+                  <p class="features_heading sublist_heading1">Жильё</p>
                   <p class="features_item_text">
                     Рекомендуем пожить в настоящем мотеле, всё как в кино!
                   </p>
                 </li>
 
                 <li>
-                  <p class="features_heading">Еда</p>
+                  <p class="features_heading sublist_heading2">Еда</p>
                   <p class="features_item_text">
                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                   </p>
                 </li>
                 <li>
-                  <p class="features_heading">Сувениры</p>
+                  <p class="features_heading sublist_heading3">Сувениры</p>
                   <p class="features_item_text">
                     Не только китайского, но и местного производства!
                   </p>
@@ -104,7 +104,7 @@
                   Мост дьявола
                 </h3>
                 <p class="item_number">— №2 —</p>
-                <p class="text_white">
+                <p class="features_item_text text_white">
                   Да, по нему можно пройти! Если конечно вы осмелитесь
                 </p>
               </div>
@@ -157,10 +157,25 @@
             <h2 class="visually-hidden">гостиницы в городе</h2>
             <a class="heading_form_white" href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
             <div class="index_popup_cont">
-              <form action="" class="popup_form">
-            
+              <form action="" method="GET" class="popup_form" id="popupForm">
+                <label for="dateBegin" class="date_begin_label"> 
+                  <span>Дата заезда:</span> 
+                  <input type="date" id="dateBegin" class="date_begin">
+                </label>
+                <label for="dateEnd" class="date_end_label">
+                  <span>Дата выезда:</span>
+                  <input type="date" id="dateEnd" class="date_end">
+                </label>
+                <label for="adultSum" class="adult_sum_label">
+                  <span>Взрослые:</span>
+                  <input type="number" id="adultSum" class="adult_sum">
+                </label>
+                <label for="childSum" class="child_sum_label">
+                  <span>Дети:</span>
+                  <input type="number" id="childSum" class="child_sum">
+                </label>
               </form>
-              <button>найти</button>
+              <button type="submit" form="popupForm" name="searchBtn" class="popup_btn popup_submit_btn">найти</button>
             </div>
           </div>
           <div>
@@ -178,14 +193,14 @@
             >
           </div>
           <ul class="list-style_none social_icon">
-            <li>
-              <a href=""><p class="visually-hidden">twitter</p></a>
+            <li class="twitter">
+              <a href="" class=""><p class="visually-hidden">twitter</p></a>
             </li>
-            <li>
-              <a href=""><p class="visually-hidden">facebook</p></a>
+            <li class="fb">
+              <a href="" class=""><p class="visually-hidden">facebook</p></a>
             </li>
-            <li>
-              <a href=""><p class="visually-hidden">youtube</p></a>
+            <li class="youtube">
+              <a href="" class=""><p class="visually-hidden">youtube</p></a>
             </li>
           </ul>
           <a
