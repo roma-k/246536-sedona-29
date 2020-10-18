@@ -526,54 +526,60 @@ ________________________________________________
   width: 45px;
   height: 47px;
   display: inline-block;
+  position: absolute;
+  left: calc(50% - 23px);
 }
 
 .social_icon a:active {
   opacity: 0.7;
 }
 
-.twitter a {
+.social_list_item {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  position: relative;
+}
+
+.twitter_link {
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   background-size: 17px 15px;
   background-position: center;
 }
 
-.fb a {
+.fb_link {
   background-image: url(../img/facebook.svg);
   background-repeat: no-repeat;
   background-size: 12px 22px;
   background-position: center;
 }
 
-.youtube a {
+.youtube_link {
   background-image: url(../img/youtube.svg);
   background-repeat: no-repeat;
   background-size: 20px 16px;
   background-position: center;
 }
 
-.twitter,
-.fb,
-.youtube {
-  display: inline-block;
+.icon_wrp {
   width: 46px;
   height: 48px;
   background-color: var(--blue);
 }
 
-.twitter:hover,
-.twitter:focus,
-.fb:hover,
-.fb:focus,
-.youtube:hover,
-.youtube:focus {
+.twitter_link:hover + .icon_wrp,
+.twitter_link:focus + .icon_wrp,
+.fb_link:hover + .icon_wrp,
+.fb_link:focus + .icon_wrp,
+.youtube_link:hover + .icon_wrp,
+.youtube_link:focus + .icon_wrp {
   background-color: var(--blue-medium);
 }
 
-.twitter:active,
-.fb:active,
-.youtube:active {
+.twitter_link:active + .icon_wrp,
+.fb_link:active + .icon_wrp,
+.youtube_link:active + .icon_wrp {
   background-color: var(--blue-dark);
 }
 
@@ -789,6 +795,21 @@ ________________________________________________
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.coast_day_container input::-webkit-input-placeholder {
+  color: var(--white);
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.coast_day_container input:-moz-placeholder {
+  color: var(--white);
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+.coast_day_range {
+  width: 100%;
 }
 
 .catalog_submit_btn {

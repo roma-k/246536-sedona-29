@@ -47,25 +47,25 @@
           <form action="" method="GET" class="catalog_form">
             <fieldset class="field1">
               <legend>Инфраструктура:</legend>
-                <input type="checkbox" checked id="pool">
+                <input type="checkbox" checked id="pool" name="pool">
                 <label for="pool">Бассейн</label>
               
-                <input type="checkbox" id="parking">
+                <input type="checkbox" id="parking" name="parking">
                 <label for="parking">Парковка</label>
               
-                <input type="checkbox" id="wifi">
+                <input type="checkbox" id="wifi" name="wifi">
                 <label for="wifi">Wi-Fi</label>
             </fieldset>
 
             <fieldset class="field2">
               <legend>Тип жилья:</legend>
-                <input type="checkbox" id="hotel" checked>
+                <input type="checkbox" id="hotel" name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               
-                <input type="checkbox" id="motel" checked>
+                <input type="checkbox" id="motel" name="motel" checked>
                 <label for="motel">Мотель</label>
               
-                <input type="checkbox" checked id="apart">
+                <input type="checkbox" id="apart" name="apart" checked>
                 <label for="apart">Апартаменты</label>
             </fieldset>
 
@@ -73,10 +73,10 @@
               <fieldset class="field3">
                 <legend>Стоимость в сутки (Р):</legend>
                 <div class="coast_day_container">
-                  <input type="number" name="" id="">
-                  <input type="number">
+                  <input type="number" name="coast_day-min" id="coast_day-min" min="0" max="3000" placeholder="от 0">
+                  <input type="number" name="coast_day-max" id="coast_day-max" min="0" max="3000" placeholder="до 3000">
                 </div>
-                <input type="range" name="" id="">
+                <input type="range" class="coast_day_range" name="range_coast" id="range_coast" min="0" max="3000" step="100" value="1500">
               </fieldset>
               <input type="submit" value="Показать" class="catalog_submit_btn">
             </div>
@@ -354,20 +354,24 @@
             <a class="footer_heading" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
           </div>
           <ul class="list-style_none social_icon">
-            <li class="twitter">
-              <a href="" class="">
+            <li class="social_list_item">
+              <a href="" class="twitter_link">
                 <p class="visually-hidden">twitter</p>
               </a>
+              <div class="icon_wrp">
+              </div>
             </li>
-            <li class="fb">
-              <a href="" class="">
+            <li class="social_list_item">
+              <a href="" class="fb_link">
                 <p class="visually-hidden">facebook</p>
               </a>
+              <div class="icon_wrp"></div>
             </li>
-            <li class="youtube">
-              <a href="" class="">
+            <li class="social_list_item">
+              <a href="" class="youtube_link">
                 <p class="visually-hidden">youtube</p>
               </a>
+              <div class="icon_wrp"></div>
             </li>
           </ul>
           <a class="text_normal htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">Website by
