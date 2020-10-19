@@ -710,6 +710,7 @@ ________________________________________________
   text-align: left;
   color: var(--white);
   display: flex;
+  flex-direction: column;
 }
 
 .form_col3 {
