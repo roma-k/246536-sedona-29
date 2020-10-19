@@ -47,25 +47,25 @@
           <form action="" method="GET" class="catalog_form">
             <fieldset class="field1">
               <legend>Инфраструктура:</legend>
-                <input type="checkbox" checked id="pool" name="pool">
+                <input type="checkbox" checked id="pool" class="pool" name="pool">
                 <label for="pool">Бассейн</label>
               
-                <input type="checkbox" id="parking" name="parking">
+                <input type="checkbox" id="parking" class="parking" name="parking">
                 <label for="parking">Парковка</label>
               
-                <input type="checkbox" id="wifi" name="wifi">
+                <input type="checkbox" id="wifi" class="wifi" name="wifi">
                 <label for="wifi">Wi-Fi</label>
             </fieldset>
 
             <fieldset class="field2">
               <legend>Тип жилья:</legend>
-                <input type="checkbox" id="hotel" name="hotel" checked>
+                <input type="checkbox" id="hotel" class="hotel" name="hotel" checked>
                 <label for="hotel">Гостиница</label>
               
-                <input type="checkbox" id="motel" name="motel" checked>
+                <input type="checkbox" id="motel" class="motel" name="motel" checked>
                 <label for="motel">Мотель</label>
               
-                <input type="checkbox" id="apart" name="apart" checked>
+                <input type="checkbox" id="apart" class="apart" name="apart" checked>
                 <label for="apart">Апартаменты</label>
             </fieldset>
 
@@ -76,6 +76,7 @@
                   <input type="number" name="coast_day-min" id="coast_day-min" min="0" max="3000" placeholder="от 0">
                   <input type="number" name="coast_day-max" id="coast_day-max" min="0" max="3000" placeholder="до 3000">
                 </div>
+                <label class="coast_range-label visually-hidden" for="range_coast">Интервал стоимости в сутки:</label>
                 <input type="range" class="coast_day_range" name="range_coast" id="range_coast" min="0" max="3000" step="100" value="1500">
               </fieldset>
               <input type="submit" value="Показать" class="catalog_submit_btn">

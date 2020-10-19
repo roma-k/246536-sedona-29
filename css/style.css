@@ -762,6 +762,18 @@ ________________________________________________
   background-size: 23px 23px;
 }
 
+.hotel:focus + label[for="hotel"],
+.motel:focus + label[for="motel"],
+.apart:focus + label[for="apart"],
+.pool:focus + label[for="pool"],
+.parking:focus + label[for="parking"],
+.wifi:focus + label[for="wifi"] {
+  outline: 2px solid var(--black);
+}
+
+.catalog_form label:focus {
+}
+
 .catalog_form input[type="checkbox"]:checked + label::before {
   background-image: url(../img/checkbox-on.svg);
   background-size: 27px 23px;
