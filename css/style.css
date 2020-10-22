@@ -108,6 +108,7 @@ img {
   padding-top: 30px;
   min-width: 568px;
   min-height: 86px;
+  cursor: pointer;
 }
 
 .heading_form_white:hover,
@@ -172,6 +173,7 @@ img {
 .sorting_item {
   opacity: 0.3;
   border-bottom: 2px dotted var(--blue);
+  cursor: pointer;
 }
 
 .sorting_item:hover,
@@ -235,8 +237,19 @@ img {
   color: var(--black-transp-03);
 }
 
+.hotel_info_btn,
+.hotel_reserve_btn {
+  height: 27px;
+  display: inline-flex;
+  padding: 0 16px;
+  align-items: center;
+  color: var(--white);
+}
+
 .hotel_info_btn {
   background-color: var(--blue);
+  min-width: 110px;
+  margin-right: 3px;
 }
 
 .hotel_info_btn:hover,
@@ -250,6 +263,7 @@ img {
 
 .hotel_reserve_btn {
   background-color: var(--brovn);
+  min-width: 142px;
 }
 
 .hotel_reserve_btn:hover,
@@ -838,6 +852,10 @@ ________________________________________________
   border-radius: 2px;
 }
 
+.catalog_submit_btn:focus {
+  outline: 2px solid black;
+}
+
 .sorting_section {
   display: grid;
   grid-template-columns: 139px 1fr 110px;
@@ -872,64 +890,60 @@ ________________________________________________
   height: 26px;
 }
 
-.hotel_info_btn,
-.hotel_reserve_btn {
-  padding: 5px 15px;
-  color: var(--white);
-  font-weight: bold;
-}
-
-.list_star li {
-  display: inline-block;
-}
-
 .result_list {
   margin: 0;
 }
 
-.result_list > li {
-  display: grid;
-  grid-template-columns: 136px 1fr 110px;
-  grid-template-rows: 1fr;
-  grid-template-areas: "left center right";
-  outline: 2px solid var(--light-silver);
-  outline-offset: -1px;
-  padding: 0 72px;
-  align-items: center;
+.result_item {
+  display: flex;
+  justify-content: space-between;
+  height: 151px;
+  align-items: flex-end;
+  padding: 30px 73px;
+  border-top: 1px solid var(--light-silver);
 }
 
-.hotel_photo {
-  grid-area: left;
+.result_item:last-child {
+  border-bottom: 1px solid var(--light-silver);
 }
 
 .hotel_info_container {
-  grid-area: center;
+  flex-grow: 1;
+  height: 97px;
   text-align: left;
-  padding: 20px 0 0 30px;
-  height: 152px;
-}
-
-.hotel_rate_container {
-  grid-area: right;
-  padding: 24px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
 }
 
 .hotel_info {
-  margin: 10px 0 20px 0;
+  margin: 0;
+  min-width: 155px;
 }
 
 .hotel_type {
-  width: 112px;
-  display: inline-block;
+  width: 110px;
+  display: inline-flex;
+  margin-right: 3px;
 }
 
 .hotel_rate_container {
-  grid-area: right;
+  flex-grow: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-end;
+}
+
+.list_star {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.list_star li {
+  margin-left: 5px;
 }
 
 /*====VISUALLY HIDDEN======*/

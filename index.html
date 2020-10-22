@@ -155,9 +155,9 @@
               и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
             <h2 class="visually-hidden">гостиницы в городе</h2>
-            <a class="heading_form_white" href="">ПОИСК ГОСТИНИЦЫ В седоне</a>
-            <div class="index_popup_cont">
-              <form action="" method="GET" class="popup_form" id="popupForm">
+            <a href="" class="heading_form_white">ПОИСК ГОСТИНИЦЫ В седоне</a>
+            <div class="index_popup_cont visually-hidden">
+              <form action="mailto:intere07@ya.ru" method="GET" class="popup_form" id="popupForm">
                 <label for="dateBegin" class="date_begin_label"> 
                   <span>Дата заезда:</span> 
                   <input type="date" id="dateBegin" class="date_begin" required>
@@ -168,18 +168,15 @@
                 </label>
                 <label for="adultSum" class="adult_sum_label">
                   <span>Взрослые:</span>
-                  <input type="number" id="adultSum" class="adult_sum">
+                  <input type="number" id="adultSum" class="adult_sum" required>
                 </label>
                 <label for="childSum" class="child_sum_label">
                   <span>Дети:</span>
-                  <input type="number" id="childSum" class="child_sum">
+                  <input type="number" id="childSum" class="child_sum" required>
                 </label>
               </form>
               <button type="submit" form="popupForm" name="searchBtn" class="popup_btn popup_submit_btn">найти</button>
             </div>
-          </div>
-          <div>
-            <form action=""></form>
           </div>
           <div class="map"></div>
         </section>
@@ -283,5 +280,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
