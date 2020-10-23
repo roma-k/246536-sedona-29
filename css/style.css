@@ -104,6 +104,7 @@ img {
   color: var(--white);
   background-color: var(--brovn);
   display: inline-block;
+  vertical-align: top;
   margin: 0 auto;
   padding-top: 30px;
   min-width: 568px;
@@ -464,6 +465,7 @@ ________________________________________________
 .sublist_heading3::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   width: 75px;
   height: 77px;
   background-repeat: no-repeat;
@@ -540,6 +542,7 @@ ________________________________________________
   width: 45px;
   height: 47px;
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   left: calc(50% - 23px);
 }
@@ -550,6 +553,7 @@ ________________________________________________
 
 .social_list_item {
   display: inline-block;
+  vertical-align: baseline;
   width: 46px;
   height: 48px;
   position: relative;
@@ -637,14 +641,24 @@ ________________________________________________
   grid-template-areas: "row1 row1" "row2 row2" "row3 row4";
 }
 
+.index_input_style {
+  background-color: var(--main-silver);
+  border: none;
+  padding: 6px 13px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .adult_sum,
 .child_sum {
   width: 114px;
   height: 100%;
+  text-align: center;
 }
 
 .date_begin,
 .date_end {
+  position: relative;
   width: 346px;
   height: 100%;
 }
@@ -765,6 +779,7 @@ ________________________________________________
 .catalog_form label::before {
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   width: 27px;
   height: 23px;
   flex-shrink: 0;

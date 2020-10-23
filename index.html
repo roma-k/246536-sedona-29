@@ -156,23 +156,23 @@
             </p>
             <h2 class="visually-hidden">гостиницы в городе</h2>
             <a href="" class="heading_form_white">ПОИСК ГОСТИНИЦЫ В седоне</a>
-            <div class="index_popup_cont visually-hidden">
-              <form action="mailto:intere07@ya.ru" method="GET" class="popup_form" id="popupForm">
+            <div class="index_popup_cont">
+              <form action="https://echo.htmlacademy.ru/" method="GET" class="popup_form" id="popupForm">
                 <label for="dateBegin" class="date_begin_label"> 
                   <span>Дата заезда:</span> 
-                  <input type="date" id="dateBegin" class="date_begin" required>
+                  <input type="date" id="dateBegin" class="date_begin index_input_style" required>
                 </label>
                 <label for="dateEnd" class="date_end_label">
                   <span>Дата выезда:</span>
-                  <input type="date" id="dateEnd" class="date_end">
+                  <input type="date" id="dateEnd" class="date_end index_input_style">
                 </label>
                 <label for="adultSum" class="adult_sum_label">
                   <span>Взрослые:</span>
-                  <input type="number" id="adultSum" class="adult_sum" required>
+                  <input type="number" id="adultSum" class="adult_sum index_input_style" value="2" required>
                 </label>
                 <label for="childSum" class="child_sum_label">
                   <span>Дети:</span>
-                  <input type="number" id="childSum" class="child_sum" required>
+                  <input type="number" id="childSum" class="child_sum index_input_style" value="0" required>
                 </label>
               </form>
               <button type="submit" form="popupForm" name="searchBtn" class="popup_btn popup_submit_btn">найти</button>
