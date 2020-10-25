@@ -6,9 +6,11 @@
   --white-transp-05: rgba(255, 255, 255, 0.5);
   --white-transp-09: rgba(255, 255, 255, 0.9);
   --black-transp-03: rgba(0, 0, 0, 0.3);
+  --shadow: rgba(0, 1, 1, 0.15);
   --bcg-silver: #eeeeee;
   --light-silver: #e5e5e5;
   --main-silver: #f2f2f2;
+  --darken-silver: #ebebeb;
   --silver: #cacaca;
   --brovn: #766357;
   --brown-medium: #604e43;
@@ -625,6 +627,7 @@ ________________________________________________
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 7px 15px var(--shadow);
 }
 
 .cl_style_btn {
@@ -660,6 +663,14 @@ ________________________________________________
   width: 114px;
   height: 100%;
   text-align: center;
+  -moz-appearance: textfield;
+}
+
+.adult_sum::-webkit-inner-spin-button,
+.child_sum::-webkit-inner-spin-button,
+.adult_sum::-webkit-outer-spin-button,
+.child_sum::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 .date_begin,
@@ -669,9 +680,20 @@ ________________________________________________
   height: 100%;
 }
 
+.date_begin::-webkit-calendar-picker-indicator,
+.date_end::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
 .calendar {
   position: absolute;
   right: 10px;
+}
+
+.calendar:focus .calendar--svg,
+.minus_btn:focus .minus--svg,
+.plus_btn:focus .plus--svg {
+  fill: var(--blue);
 }
 
 .date_begin_label,
@@ -686,6 +708,39 @@ ________________________________________________
 .date_begin_label {
   grid-area: row1;
   justify-content: space-between;
+}
+
+.date_begin_label:hover input,
+.date_end_label:hover input,
+.adult_sum_label:hover input,
+.child_sum_label:hover input {
+  background-color: var(--darken-silver);
+}
+
+.date_begin_label:hover .calendar--svg,
+.date_end_label:hover .calendar--svg,
+.adult_sum_label:hover .minus--svg,
+.child_sum_label:hover .minus--svg,
+.adult_sum_label:hover .plus--svg,
+.child_sum_label:hover .plus--svg {
+  fill: var(--black);
+}
+
+.date_begin_label input:focus,
+.date_end_label input:focus,
+.adult_sum_label input:focus,
+.child_sum_label input:focus {
+  background-color: transparent;
+  outline: 2px solid var(--light-silver);
+}
+
+.date_begin:focus + button .calendar--svg,
+.date_end:focus + button .calendar--svg,
+.adult_sum:focus + button .minus--svg,
+.adult_sum:focus + button + button .plus--svg,
+.child_sum:focus + button .minus--svg,
+.child_sum:focus + button + button .plus--svg {
+  fill: var(--blue);
 }
 
 .date_end_label {
