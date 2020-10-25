@@ -465,7 +465,7 @@ ________________________________________________
 .sublist_heading3::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   width: 75px;
   height: 77px;
   background-repeat: no-repeat;
@@ -542,7 +542,7 @@ ________________________________________________
   width: 45px;
   height: 47px;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   position: absolute;
   left: calc(50% - 23px);
 }
@@ -553,7 +553,7 @@ ________________________________________________
 
 .social_list_item {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   width: 46px;
   height: 48px;
   position: relative;
@@ -627,6 +627,12 @@ ________________________________________________
   justify-content: space-between;
 }
 
+.cl_style_btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .popup_form {
   outline: 1px black;
   color: var(--black);
@@ -663,12 +669,18 @@ ________________________________________________
   height: 100%;
 }
 
+.calendar {
+  position: absolute;
+  right: 10px;
+}
+
 .date_begin_label,
 .date_end_label,
 .adult_sum_label,
 .child_sum_label {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .date_begin_label {
@@ -689,6 +701,22 @@ ________________________________________________
 .child_sum_label {
   grid-area: row4;
   justify-content: flex-end;
+}
+
+.plus_btn,
+.minus_btn,
+.child_minus_btn,
+.child_plus_btn {
+  position: absolute;
+}
+
+.plus_btn {
+  right: 13px;
+}
+
+.minus_btn {
+  right: 87px;
+  top: 8px;
 }
 
 .child_sum_label span {
@@ -779,7 +807,7 @@ ________________________________________________
 .catalog_form label::before {
   content: "";
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: middle;
   width: 27px;
   height: 23px;
   flex-shrink: 0;
