@@ -710,6 +710,8 @@ ________________________________________________
   justify-content: space-between;
 }
 
+
+
 .date_begin_label:hover input,
 .date_end_label:hover input,
 .adult_sum_label:hover input,
@@ -776,6 +778,12 @@ ________________________________________________
 
 .child_sum_label span {
   margin-right: 30px;
+}
+
+.calendar:active .calendar--svg,
+.minus_btn:active .minus--svg,
+.plus_btn:active .plus--svg {
+  fill: var(--blue);
 }
 
 .popup_submit_btn {
