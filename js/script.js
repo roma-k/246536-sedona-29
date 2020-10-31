@@ -6,7 +6,7 @@ let childPlus = document.getElementById('childPlus');
 let childCounter = Number(childSum.value);
 
 function showHidden() {
-	event.preventDefault();
+	Event.preventDefault();
 	popupWrap.classList.toggle('visually-hidden');
 }
 
@@ -46,5 +46,21 @@ childMinus.onclick = function() {
 	};
 	childSum.value = childCounter;
 }
+
+
+//   map=============================
+ymaps.ready(init);
+function init() {
+	var myMap = new ymaps.Map("map", {
+		// Координаты центра карты.
+		// Порядок по умолчанию: «широта, долгота».
+		// Чтобы не определять координаты центра карты вручную,
+		// воспользуйтесь инструментом Определение координат.
+		center: [34.869497, -111.760186],
+		// Уровень масштабирования. Допустимые значения:
+		// от 0 (весь мир) до 19.
+		zoom: 15
+	});
+};
 
 
