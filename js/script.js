@@ -6,7 +6,7 @@ let childPlus = document.getElementById('childPlus');
 let childCounter = Number(childSum.value);
 
 function showHidden() {
-	Event.preventDefault();
+	event.preventDefault();
 	popupWrap.classList.toggle('visually-hidden');
 }
 
@@ -48,19 +48,36 @@ childMinus.onclick = function() {
 }
 
 
-//   map=============================
+//   ===== map =====
+
 ymaps.ready(init);
 function init() {
 	var myMap = new ymaps.Map("map", {
-		// Координаты центра карты.
-		// Порядок по умолчанию: «широта, долгота».
-		// Чтобы не определять координаты центра карты вручную,
-		// воспользуйтесь инструментом Определение координат.
 		center: [34.869497, -111.760186],
-		// Уровень масштабирования. Допустимые значения:
-		// от 0 (весь мир) до 19.
-		zoom: 15
+		zoom: 10
 	});
+	// myMap.setType('yandex#hybrid');
+	myMap.controls.remove('zoomControl');
+	myMap.controls.remove('geolocationControl');
+	myMap.controls.remove('searchControl');
+	myMap.controls.remove('trafficControl');
+	myMap.controls.remove('typeSelector');
+	myMap.controls.remove('fullscreenControl');
+	myMap.controls.remove('zoomControl');
+	myMap.controls.remove('rulerControl');
+	
+
+
+var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [34.869497, -111.760186] // координаты точки
+    }
+});
+
+myMap.geoObjects.add(myGeoObject); 
+
+
 };
 
 
