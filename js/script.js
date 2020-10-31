@@ -1,17 +1,17 @@
 let popupBtn = document.querySelector('.heading_form_white');
 let popupWrap = document.querySelector('.index_popup_cont');
+let indexForm = document.querySelector('.popup_form');
 let childSum = document.getElementById('childSum');
 let childMinus = document.getElementById('childMinus');
 let childPlus = document.getElementById('childPlus');
 let childCounter = Number(childSum.value);
 
-function showHidden() {
-	event.preventDefault();
+
+popupBtn.addEventListener('click', function(evt) {
+	evt.preventDefault();
 	popupWrap.classList.toggle('visually-hidden');
-}
-
-
-popupBtn.addEventListener('click', showHidden);
+	popupWrap.classList.toggle('modal-show');
+});
 
 let calendarBtn = document.querySelectorAll('.calendar');
 let adultSum = document.getElementById('adultSum');
