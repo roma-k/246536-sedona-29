@@ -367,6 +367,7 @@ ________________________________________________
   background-position: center;
   background-size: cover;
   padding: 77px 0;
+  clip-path: polygon(0 0, 0px 453px, 250px 480px, 250px 450px, 600px 510px, 950px 450px, 950px 480px, 1200px 453px, 1200px 0);
 }
 
 .main {
@@ -666,13 +667,6 @@ ________________________________________________
   -moz-appearance: textfield;
 }
 
-.adult_sum::-webkit-inner-spin-button,
-.child_sum::-webkit-inner-spin-button,
-.adult_sum::-webkit-outer-spin-button,
-.child_sum::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
 .date_begin,
 .date_end {
   position: relative;
@@ -695,6 +689,7 @@ ________________________________________________
 .plus_btn:focus .plus--svg {
   fill: var(--blue);
 }
+
 
 .date_begin_label,
 .date_end_label,
@@ -730,8 +725,8 @@ ________________________________________________
 
 .date_begin_label input:focus,
 .date_end_label input:focus,
-.adult_sum_label input:focus,
-.child_sum_label input:focus {
+.adult_sum_label .adult_sum:focus,
+.child_sum_label .child_sum:focus {
   background-color: transparent;
   outline: 2px solid var(--light-silver);
 }
@@ -768,12 +763,21 @@ ________________________________________________
 }
 
 .plus_btn {
-  right: 13px;
+    right: 10px;
+    width: 20px;
+    height: 22px;
 }
 
 .minus_btn {
   right: 87px;
-  top: 8px;
+  top: 5px;
+  height: 22px;
+  width: 20px;
+}
+
+.plus_btn:focus .plus--svg,
+.minus_btn:focus .minus--svg {
+  fill: var(--blue);
 }
 
 .child_sum_label span {
@@ -861,10 +865,11 @@ ________________________________________________
 }
 
 .catalog_form label {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 22px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 22px;
+    width: 190px;
 }
 
 .catalog_form label::before {
@@ -888,10 +893,7 @@ ________________________________________________
 .pool:focus + label[for="pool"],
 .parking:focus + label[for="parking"],
 .wifi:focus + label[for="wifi"] {
-  outline: 2px solid var(--black);
-}
-
-.catalog_form label:focus {
+  outline: 2px solid var(--white);
 }
 
 .catalog_form input[type="checkbox"]:checked + label::before {
@@ -929,7 +931,17 @@ ________________________________________________
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  -moz-appearance: textfield;
 }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 
 .coast_day_container input::-webkit-input-placeholder {
   color: var(--white);
@@ -940,6 +952,7 @@ ________________________________________________
   color: var(--white);
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
+
 
 .coast_day_range {
   width: 100%;
