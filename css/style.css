@@ -56,15 +56,15 @@ img {
 }
 
 @keyframes bounce {
-  0% { transform: translateY(-2000px); }
+  0% { transform: translateY(-400px); }
   100% { transform: translateY(0); }
   } 
 
-.modal-show {
+.modal-open {
   display: block;
   animation-name: bounce;
   animation-duration: 0.6s;
-} 
+}
 
 .body-wrapper {
   min-height: 100%;
@@ -719,12 +719,6 @@ ________________________________________________
   right: 10px;
 }
 
-.calendar:focus .calendar--svg,
-.minus_btn:focus .minus--svg,
-.plus_btn:focus .plus--svg {
-  fill: var(--blue);
-}
-
 .date_begin_label,
 .date_end_label,
 .adult_sum_label,
@@ -763,14 +757,26 @@ ________________________________________________
   outline: 2px solid var(--light-silver);
 }
 
-.date_begin:focus + button .calendar--svg,
-.date_end:focus + button .calendar--svg,
-.adult_sum:focus + button .minus--svg,
-.adult_sum:focus + button + button .plus--svg,
-.child_sum:focus + button .minus--svg,
-.child_sum:focus + button + button .plus--svg {
+.plus_btn:focus .plus--svg,
+.minus_btn:focus .minus--svg,
+.calendar:focus .calendar--svg {
+  fill: var(--black);
+}
+
+.calendar:active .calendar--svg,
+.minus_btn:active .minus--svg,
+.plus_btn:active .plus--svg {
   fill: var(--blue);
 }
+
+/*.date_begin:focus + button .calendar--svg,
+.date_end:focus + button .calendar--svg,
+.adult_sum:focus svg[class=.minus--svg],
+.adult_sum:focus svg[class=.plus--svg],
+.child_sum:focus svg[class=.minus--svg],
+.child_sum:focus svg[class=.plus--svg] {
+  fill: var(--black);
+}*/
 
 .date_end_label {
   grid-area: row2;
@@ -807,19 +813,8 @@ ________________________________________________
   width: 20px;
 }
 
-.plus_btn:focus .plus--svg,
-.minus_btn:focus .minus--svg {
-  fill: var(--blue);
-}
-
 .child_sum_label span {
   margin-right: 30px;
-}
-
-.calendar:active .calendar--svg,
-.minus_btn:active .minus--svg,
-.plus_btn:active .plus--svg {
-  fill: var(--blue);
 }
 
 .popup_submit_btn {

@@ -56,7 +56,6 @@ function init() {
 		center: [34.869497, -111.760186],
 		zoom: 10
 	});
-	// myMap.setType('yandex#hybrid');
 	myMap.controls.remove('zoomControl');
 	myMap.controls.remove('geolocationControl');
 	myMap.controls.remove('searchControl');
@@ -70,8 +69,8 @@ function init() {
 
 var myGeoObject = new ymaps.GeoObject({
     geometry: {
-        type: "Point", // тип геометрии - точка
-        coordinates: [34.869497, -111.760186] // координаты точки
+        type: "Point", 
+        coordinates: [34.869497, -111.760186]
     }
 });
 
