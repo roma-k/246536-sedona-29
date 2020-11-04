@@ -978,10 +978,82 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
 }
 
+/*==================================================================================================*/
 .coast_day_range {
+  -webkit-appearance: none;
+  margin: 18px 0;
   width: 100%;
 }
+.coast_day_range:focus {
+  outline: 2px solid var(--white);
+  outline-offset: 12px;
+}
+.coast_day_range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: var(--white);
+  border: none;
+}
+.coast_day_range::-webkit-slider-thumb {
+  height: 19px;
+  width: 19px;
+  border-radius: 9px;
+  background-color: var(--white);
+  background-image: url(../img/filter-button.svg);
+  background-size: 19px 19px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
 
+.coast_day_range::-webkit-slider-thumb:hover {
+  height: 23px;
+  width: 23px;
+  border-radius: 12px;
+  background-color: var(--white);
+  background-image: url(../img/filter-button.svg);
+  background-size: 23px 23px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.coast_day_range::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: var(--white);
+  border: none;
+}
+
+.coast_day_range::-moz-range-thumb {
+  height: 19px;
+  width: 19px;
+  border-radius: 9px;
+  background-color: var(--white);
+  background-image: url(../img/filter-button.svg);
+  background-size: 19px 19px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+
+.coast_day_range::-moz-range-thumb:hover {
+  height: 23px;
+  width: 23px;
+  border-radius: 12px;
+  background-color: var(--white);
+  background-image: url(../img/filter-button.svg);
+  background-size: 23px 23px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+/*===========================================================================*/
 .catalog_submit_btn {
   margin: 0 auto;
   width: 137px;
@@ -995,6 +1067,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 2px;
 }
 
+.catalog_submit_btn:hover,
+.catalog_submit_btn:focus {
+  background-color: var(--white);
+  color: var(--black);
+  cursor: pointer;
+}
 .catalog_submit_btn:focus {
   outline: 2px solid black;
 }
