@@ -10,7 +10,7 @@ let childCounter = Number(childSum.value);
 popupBtn.addEventListener('click', function(evt) {
 	evt.preventDefault();
 	popupWrap.classList.toggle('visually-hidden');
-	popupWrap.classList.toggle('modal-show');
+	popupWrap.classList.toggle('modal-open');
 });
 
 let calendarBtn = document.querySelectorAll('.calendar');
