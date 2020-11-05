@@ -13,7 +13,6 @@ popupBtn.addEventListener('click', function(evt) {
 	popupWrap.classList.toggle('modal-open');
 });
 
-let calendarBtn = document.querySelectorAll('.calendar');
 let adultSum = document.getElementById('adultSum');
 let adultPlus = document.getElementById('adultPlus');
 let adultMinus = document.getElementById('adultMinus');

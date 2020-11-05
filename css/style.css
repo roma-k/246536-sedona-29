@@ -684,29 +684,56 @@ ________________________________________________
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 38px 38px 38px;
   grid-template-areas: "row1 row1" "row2 row2" "row3 row4";
-}
+  }
 
 .index_input_style {
-  background-color: var(--main-silver);
-  border: none;
+  height: 38px;
   padding: 6px 13px;
+  border: none;
+  background-color: var(--main-silver);
   font-size: 14px;
+  color: var(--black);
   font-weight: 700;
+}
+/*=====input======*/
+  .date_begin,
+  .date_end {
+    width: 346px;
 }
 
 .adult_sum,
 .child_sum {
   width: 114px;
-  height: 100%;
   text-align: center;
   -moz-appearance: textfield;
 }
 
-.date_begin,
-.date_end {
-  position: relative;
-  width: 346px;
-  height: 100%;
+.date_begin_label {
+  grid-area: row1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar {
+  grid-area: row1;
+  position: absolute;
+  right: 64px;
+  top: 61px;
+}
+
+.date_end_label {
+  grid-area: row2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendar2 {
+  grid-area: row2;
+  position: absolute;
+  right: 64px;
+  top: 130px;
 }
 
 .date_begin::-webkit-calendar-picker-indicator,
@@ -714,120 +741,107 @@ ________________________________________________
   opacity: 0;
 }
 
-.calendar {
-  position: absolute;
-  right: 10px;
-}
-
-.date_begin_label,
-.date_end_label,
-.adult_sum_label,
-.child_sum_label {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.date_begin_label {
-  grid-area: row1;
-  justify-content: space-between;
-}
-
-.date_begin_label:hover input,
-.date_end_label:hover input,
-.adult_sum_label:hover input,
-.child_sum_label:hover input {
-  background-color: var(--darken-silver);
-}
-
-.date_begin_label:hover .calendar--svg,
-.date_end_label:hover .calendar--svg,
-.adult_sum_label:hover .minus--svg,
-.child_sum_label:hover .minus--svg,
-.adult_sum_label:hover .plus--svg,
-.child_sum_label:hover .plus--svg {
-  fill: var(--black);
-}
-
-.date_begin_label input:focus,
-.date_end_label input:focus,
-.adult_sum_label .adult_sum:focus,
-.child_sum_label .child_sum:focus {
-  background-color: transparent;
-  outline: 2px solid var(--light-silver);
-}
-
-.plus_btn:focus .plus--svg,
-.minus_btn:focus .minus--svg,
-.calendar:focus .calendar--svg {
-  fill: var(--black);
-}
-
-.calendar:active .calendar--svg,
-.minus_btn:active .minus--svg,
-.plus_btn:active .plus--svg {
-  fill: var(--blue);
-}
-
-/*.date_begin:focus + button .calendar--svg,
-.date_end:focus + button .calendar--svg,
-.adult_sum:focus svg[class=.minus--svg],
-.adult_sum:focus svg[class=.plus--svg],
-.child_sum:focus svg[class=.minus--svg],
-.child_sum:focus svg[class=.plus--svg] {
-  fill: var(--black);
-}*/
-
-.date_end_label {
-  grid-area: row2;
-  justify-content: space-between;
-}
-
 .adult_sum_label {
   grid-area: row3;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.adult_minus_btn {
+  grid-area: row3;
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  left: 170px;
+  bottom: 170px;
+}
+
+.adult_plus_btn {
+  grid-area: row3;
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  bottom: 167px;
+  left: 250px;
 }
 
 .child_sum_label {
   grid-area: row4;
+  display: flex;
   justify-content: flex-end;
-}
-
-.plus_btn,
-.minus_btn,
-.child_minus_btn,
-.child_plus_btn {
-  position: absolute;
-}
-
-.plus_btn {
-  right: 10px;
-  width: 20px;
-  height: 22px;
-}
-
-.minus_btn {
-  right: 87px;
-  top: 5px;
-  height: 22px;
-  width: 20px;
+  align-items: center;
 }
 
 .child_sum_label span {
-  margin-right: 30px;
+  margin-right: 25px;
+}
+
+.child_minus_btn {
+  grid-area: row4;
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  right: 133px;
+  bottom: 170px;
+}
+
+.child_plus_btn {
+  grid-area: row4;
+  width: 30px;
+  height: 38px;
+  position: absolute;
+  right: 57px;
+  bottom: 167px;
 }
 
 .popup_submit_btn {
-  height: 58px;
-  background-color: var(--blue);
+  font-size: 21px;
+  font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
+  height: 58px;
   border: none;
+  background-color: var(--blue);
 }
 
 .popup_submit_btn:hover,
 .popup_submit_btn:focus {
   background-color: var(--blue-medium);
+  cursor: pointer;
+}
+
+.date_begin:hover,
+.date_end:hover,
+.adult_sum:hover,
+.child_sum:hover {
+  background-color: var(--darken-silver);
+}
+
+.calendar:hover .calendar--svg,
+.calendar2:hover .calendar--svg,
+.spin_btn:hover .minus--svg,
+.spin_btn:hover .plus--svg,
+.calendar:focus .calendar--svg,
+.calendar2:focus .calendar--svg,
+.spin_btn:focus .minus--svg,
+.spin_btn:focus .plus--svg {
+  fill: var(--black);
+}
+
+.date_begin:focus,
+.date_end:focus,
+.adult_sum:focus,
+.child_sum:focus {
+  background-color: transparent;
+  outline: 2px solid var(--light-silver);
+}
+
+.calendar:active .calendar--svg,
+.calendar2:active .calendar--svg,
+.spin_btn:active .minus--svg,
+.spin_btn:active .plus--svg {
+  fill: var(--blue);
 }
 
 .popup_submit_btn:active {
@@ -1054,7 +1068,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*===========================================================================*/
 .catalog_submit_btn {
-  margin: 0 auto;
+  margin-left: 85px;
   width: 137px;
   height: 36px;
   font-size: 14px;

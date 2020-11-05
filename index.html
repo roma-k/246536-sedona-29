@@ -163,8 +163,10 @@
               <form action="https://echo.htmlacademy.ru/" method="GET" class="popup_form" id="popupForm">
                 <label for="dateBegin" class="date_begin_label"> 
                   <span>Дата заезда:</span> 
-                  <input type="date" id="dateBegin" name="dateBegin" class="date_begin index_input_style" value="2017-04-24" required>
-                  <button type="button" class="cl_style_btn calendar" aria-label="Календарь">
+                  <input type="date" id="dateBegin" name="dateBegin" class="date_begin index_input_style" value="2017-04-24" required>     
+                </label>
+
+                <button type="button" class="cl_style_btn calendar" aria-label="Календарь">
                     <svg aria-hidden="true" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="calendar--svg" fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21
                                     22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75
@@ -183,11 +185,12 @@
                                     12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9" />
                     </svg>
                   </button>
-                </label>
                 <label for="dateEnd" class="date_end_label">
                   <span>Дата выезда:</span>
                   <input type="date" id="dateEnd" name="dateEnd" value="2017-07-04" class="date_end index_input_style" required>
-                  <button type="button" class="cl_style_btn calendar" aria-label="Календарь">
+                </label>
+
+                <button type="button" class="cl_style_btn calendar2" aria-label="Календарь">
                     <svg aria-hidden="true" width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="calendar--svg" fill-rule="evenodd" clip-rule="evenodd" d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21
                                     22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75
@@ -206,41 +209,40 @@
                                     12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z" fill="#A9A9A9" />
                     </svg>
                   </button>
-                </label>
                 <label for="adultSum" class="adult_sum_label">
                   <span>Взрослые:</span>
-                  
                   <input type="number" name="adult" id="adultSum" class="adult_sum index_input_style" value="2" min="0" required>
-                  <button type="button" type="button" class="cl_style_btn spin_btn minus_btn" id="adultMinus" aria-label="Минус один">
+                </label>
+
+                <button type="button" class="cl_style_btn spin_btn adult_minus_btn" id="adultMinus" aria-label="Минус один">
                     <svg aria-hidden="true" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect class="minus--svg" width="12" height="3" fill="#A9A9A9" />
                     </svg>
-                  </button>
-                  <button type="button" class="cl_style_btn spin_btn plus_btn" id="adultPlus" aria-label="Плюс один">
+                </button>
+                <button type="button" class="cl_style_btn spin_btn adult_plus_btn" id="adultPlus" aria-label="Плюс один">
                     <svg aria-hidden="true" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="plus--svg" fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
                     </svg>
-                  </button>
-                </label>
-
+                </button>
 
                 <label for="childSum" class="child_sum_label">
                   <span>Дети:</span>
-                  
                   <input type="number" id="childSum" name="child" class="child_sum index_input_style" value="0" required>
-                  <button type="button" class="cl_style_btn spin_btn minus_btn" id="childMinus" aria-label="Минус один">
+                </label>
+
+                <button type="button" class="cl_style_btn spin_btn child_minus_btn" id="childMinus" aria-label="Минус один">
                     <svg aria-hidden="true" width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect class="minus--svg" width="12" height="3" fill="#A9A9A9" />
                     </svg>
                   </button>
-                  <button type="button" class="cl_style_btn spin_btn plus_btn" id="childPlus" aria-label="Плюс один">
+                  <button type="button" class="cl_style_btn spin_btn child_plus_btn" id="childPlus" aria-label="Плюс один">
                     <svg aria-hidden="true" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="plus--svg" fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9" />
                     </svg>
                   </button>
-                </label>
+
               </form>
               <button type="submit" form="popupForm" class="popup_btn popup_submit_btn">найти</button>
             </div>
