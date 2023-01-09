@@ -10,9 +10,12 @@
         <script
             src="https://api-maps.yandex.ru/2.1/?apikey=040f7b62-57bc-4efa-adb8-e91c400ba6ce&lang=ru_RU"
             type="text/javascript"></script>
-        <title>HTML Academy: Седона</title>
-    </head>
-    <body class="page">
+            <title>HTML Academy: Седона</title>
+        </head>
+        <body class="page">
+        <div class="background" id="background">
+            <img id="full_img" src="img/checkbox-off.svg" alt="">
+        </div>
         <div class="body-wrapper">
             <header class="main_header">
                 <div class="header_top">
@@ -49,7 +52,7 @@
                     </p>
                     <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
                         о политике и экономике.</p>
-                    <div class="photo-galery">
+                    <div class="photo-galery" id="photoGalery">
                         <div class="photo photo-1">
                             <img src="img/photo-1-desktop-jpg.jpg" alt="дорога в закат" width="1200" height="400">
                             <div class="description-photo">
@@ -246,5 +249,6 @@
             </footer>
         </div>
         <script src="js/script.js"></script>
+        <script src="js/photo-galery.js"></script>
     </body>
 </html>
