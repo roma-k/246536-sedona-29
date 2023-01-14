@@ -24,7 +24,7 @@ let adultCounter = 2;
 adultPlus.onclick = function () {
     adultCounter = adultCounter + 1;
     adultSum.value = adultCounter;
-}
+};
 
 adultMinus.onclick = function () {
     if (adultCounter > 0) {
@@ -33,12 +33,12 @@ adultMinus.onclick = function () {
         adultCounter = 0;
     }
     adultSum.value = adultCounter;
-}
+};
 
 childPlus.onclick = function () {
     childCounter++;
     childSum.value = childCounter;
-}
+};
 
 childMinus.onclick = function () {
     if (childCounter > 0) {
@@ -48,7 +48,6 @@ childMinus.onclick = function () {
     }
     childSum.value = childCounter;
 };
-
 
 //   ===== map =====
 
@@ -96,4 +95,4 @@ function init() {
         .geoObjects
         .add(myGeoObject);
 
-};
+}

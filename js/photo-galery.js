@@ -1,6 +1,6 @@
-let photoGalery = document.getElementById("photoGalery");
-let fullImg = document.getElementById('full_img');
-let backGround = document.getElementById('background');
+const photoGalery = document.getElementById("photoGalery");
+const fullImg     = document.getElementById('full_img');
+const backGround  = document.getElementById('background');
 
 document.addEventListener('scroll', Dell);
 backGround.addEventListener('click', Dell);
